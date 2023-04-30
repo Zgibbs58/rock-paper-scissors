@@ -1,0 +1,15 @@
+button {
+  text-align: center;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
