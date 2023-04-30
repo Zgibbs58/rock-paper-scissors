@@ -45,16 +45,16 @@ function rockPaperScissors() {
     alert("You chose paper, opponent chose scissors. You lose!");
   }
 
-  //   function scoreBoard(currentValue) {
-  //     currentValue.innerHTML;
-  //   }
-
-  var playAgain = confirm(
-    "If you want to play again, hit okay. If you don't, hit cancel."
-  );
-  if (playAgain) {
-    return rockPaperScissors();
-  }
+  //   return askUser();
 }
+// ---- ask why this won't allow html to update
+// function askUser(params) {
+//   var playAgain = confirm(
+//     "If you want to play again, hit okay. If you don't, hit cancel."
+//   );
+//   if (playAgain) {
+//     rockPaperScissors();
+//   }
+// }
 
 playBtn.addEventListener("click", rockPaperScissors);
