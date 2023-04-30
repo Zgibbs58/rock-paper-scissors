@@ -1,4 +1,15 @@
+section {
+  display: flex;
+  /* padding: 1rem 1rem 3rem; */
+}
+h2 {
+  padding: 0 1rem;
+}
+p {
+  text-align: center;
+}
 button {
+  display: block;
   text-align: center;
   padding: 10px;
   background-color: blue;
