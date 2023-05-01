@@ -6,9 +6,11 @@ var updateTies = document.querySelector(".ties");
 // console.log(parseInt(updateWin.innerHTML) + 1);
 
 function rockPaperScissors() {
-  var playersChoice = prompt(
+  var playerPrompt = prompt(
     "Choose between rock, paper, or scissors. Type R, P, or S below."
   );
+
+  var playersChoice = playerPrompt.toUpperCase();
   // if (playersChoice === "R") {
   //   var playersChoice = 0;
   // } else if (playersChoice === "P") {
