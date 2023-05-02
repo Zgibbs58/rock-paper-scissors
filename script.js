@@ -6,18 +6,21 @@ var updateTies = document.querySelector(".ties");
 // console.log(parseInt(updateWin.innerHTML) + 1);
 
 function rockPaperScissors() {
+  var opponentChoices = "RPS";
   var playerPrompt = prompt(
     "Choose between rock, paper, or scissors. Type R, P, or S below."
   );
+  // Validates that something is entered in the prompt box.
+  if (!playerPrompt) {
+    return;
+  }
 
-  var playersChoice = playerPrompt.toUpperCase();
-  // if (playersChoice === "R") {
-  //   var playersChoice = 0;
-  // } else if (playersChoice === "P") {
-  //   var playersChoice = 1;
-  // } else if (playersChoice === "S") {
-  //   var playersChoice = 2;
-  // }
+  var playersChoice = playerPrompt[0].toUpperCase();
+  // validates that opponentChoices includes or has at least one character of playersChoice. If not an alert is given and the user is re-prompted.
+  if (!opponentChoices.includes(playersChoice)) {
+    alert("Please choose a valid input");
+    return rockPaperScissors();
+  }
 
   var opponentChoices = "RPS";
   var opponentChoice = opponentChoices.charAt(
