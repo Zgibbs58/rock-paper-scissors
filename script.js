@@ -22,7 +22,6 @@ function rockPaperScissors() {
     return rockPaperScissors();
   }
 
-  var opponentChoices = "RPS";
   var opponentChoice = opponentChoices.charAt(
     Math.floor(Math.random() * opponentChoices.length)
   );
